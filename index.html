@@ -112,6 +112,10 @@
             transform: translateY(-3px);
             box-shadow: 0 6px 12px rgba(0,0,0,0.05);
         }
+	.link-item.disabled {
+    	    pointer-events: none; /* Prevents any mouse interaction */
+            cursor: default;      /* Forces the standard arrow cursor instead of the clicking hand */
+	}
     </style>
 </head>
 <body>
@@ -123,10 +127,11 @@
 
     <div class="link-list">
         <a href="https://andsoo.github.io/matemaatika/" class="link-item" target="_blank" rel="noopener noreferrer">Matemaatika võlumaailm</a>
-        <a href="https://andsoo.github.io/english/" class="link-item" target="_blank" rel="noopener noreferrer">Keelesõber</a>
+        <a href="https://andsoo.github.io/english/" class="link-item" target="_blank" rel="noopener noreferrer">Keelesõber - õpi inglise keelt</a>
         <a href="https://lugeja-63030115742.us-central1.run.app/" class="link-item" target="_blank" rel="noopener noreferrer">Tark lugeja</a>
         <a href="https://varalaegas-330812544683.europe-west1.run.app/" class="link-item" target="_blank" rel="noopener noreferrer">Varalaegas</a>
         <a href="https://tallinn-bus-timer-330812544683.us-central1.run.app/" class="link-item" target="_blank" rel="noopener noreferrer">Bussiajad</a>
+        <div class="link-item disabled">Bensuhinnad (töös)</div>	
     </div>
 </div>
 
